@@ -23,7 +23,7 @@ export const AboutCompAccordion = ({ title }) => {
               aria-expanded={expanded}
               aria-controls="faqs-text-01"
             >
-              <span className="text-[16px] md:text-[18px]">{title}</span>
+              <li className="text-[16px] md:text-[18px]">{title}</li>
               <hr className="text-white" />
               {expanded ? (
                 <span className="rounded-full bg-[#F8F7F3] p-1 text-[20px] text-black">

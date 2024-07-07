@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 //icons
-import { MdKeyboardArrowRight } from "react-icons/md";
 
 const BreadCrumbs = () => {
   const location = useLocation();

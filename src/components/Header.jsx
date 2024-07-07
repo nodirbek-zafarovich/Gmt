@@ -8,7 +8,7 @@ import { Links } from "../constants/Links";
 
 // icons
 import { FaRegUser } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa6";
 import { BsCart2 } from "react-icons/bs";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
@@ -84,7 +84,7 @@ const Header = () => {
                 to={"favorite"}
                 className="flex flex-col items-center text-[#7A7687] hover:text-[#07745e]"
               >
-                <FaHeart size={23} />
+                <FaRegHeart size={23} />
                 <span className="mt-1 hidden lg:block">Избранное</span>
               </NavLink>
               <NavLink

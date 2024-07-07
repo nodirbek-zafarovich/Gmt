@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import heroImg from "../assets/heroImg22.png";
 
 import React, { useRef } from "react";
@@ -25,15 +24,15 @@ export default function Hero() {
   };
   return (
     <div className="slider-container max-w-[1300px] w-full px-5 my-5 sm:my-7 mx-auto relative">
-      <Slider
+      <Slider 
         ref={(slider) => {
           sliderRef = slider;
         }}
         {...settings}
       >
-        {[1, 2, 3, 4].map((i) => (
+        {[1, 2, 3, 4].map((i) => ( 
           <div key={i}>
-            <div className="flex flex-col  gap-6 rounded-[10px] bg-[#E5E4ED] xl:flex-row">
+            <div className="flex flex-col   gap-6 rounded-[10px] bg-[#E5E4ED] xl:flex-row">
               <div>
                 <div className="px-5 pt-4">
                   <h1 className="mb-[15px] text-[28px] font-medium text-[#202020] sm:mb-7 sm:text-[34px]">

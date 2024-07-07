@@ -53,6 +53,7 @@ const Catalog = () => {
                 className="w-full h-full rounded-t-[10px]"
                 height={300}
                 effect="blur"
+                width={404}
               />
               <div className="p-4">
                 <h5

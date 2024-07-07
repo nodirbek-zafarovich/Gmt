@@ -12,8 +12,12 @@ import Compare from "./Pages/Compare";
 
 import { Toaster } from "react-hot-toast";
 import ProductDetail from "./Pages/ProductDetail";
-import PageNotFound from "./Pages/PageNotFound";
+import Manufactures from "./Pages/Manufactures";
 import CatalogLayout from "./Layout/CatalogLayout";
+import CabinetKey from "./Pages/CabinetKey";
+import Uslugi from "./Pages/Uslugi";
+import Aksii from "./Pages/Aksii";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   // router
@@ -21,7 +25,7 @@ const App = () => {
     {
       path: "/",
       element: <RootLayout />,
-      errorElement: <PageNotFound />,
+      errorElement: <Manufactures />,
       children: [
         {
           index: true,
@@ -54,10 +58,25 @@ const App = () => {
           path: "compare",
           element: <Compare />,
         },
+        {
+          path: "cabinetKey",
+          element: <CabinetKey />,
+        },
+        {
+          path: "uslugi",
+          element: <Uslugi />,
+        },
+        {
+          path: "aksii",
+          element: <Aksii />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
       ],
     },
   ]);
-
   return (
     <>
       <RouterProvider router={router} />

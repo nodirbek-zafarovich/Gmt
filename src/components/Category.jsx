@@ -26,7 +26,7 @@ const Category = () => {
             <LazyLoadImage
               src={product.img}
               alt={product.commercial_name}
-              className="w-full h-full rounded-t-[10px]"
+              className=" h-full rounded-t-[10px]"
               height={300}
               effect="blur"
             />
