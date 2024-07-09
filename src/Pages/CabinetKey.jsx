@@ -1,6 +1,12 @@
 import { useEffect } from "react";
 import Reanimatsiya from "../assets/reanimatsiya.png";
-import { AboutCompany, News, Options, SendQuestion } from "../components";
+import {
+  AboutCompany,
+  BreadCrumbs,
+  News,
+  Options,
+  SendQuestion,
+} from "../components";
 
 const CabinetKey = () => {
   useEffect(() => {
@@ -9,6 +15,7 @@ const CabinetKey = () => {
 
   return (
     <section className="max-w-[1300px] mx-auto px-5 mb-5">
+      <BreadCrumbs />
       <div>
         <div class=" container mt-[40px] md:mt-[50px] lg:mt-[100px] custom-margin ">
           <p class=" custom-title mb-[20px] md:mb-[30px] lg:mb-[40px] ">
@@ -95,7 +102,6 @@ const CabinetKey = () => {
       </div>
       <News />
       <AboutCompany />
-      <SendQuestion />
     </section>
   );
 };

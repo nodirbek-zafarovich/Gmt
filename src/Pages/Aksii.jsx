@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Products from "../data/products.json";
+import { BreadCrumbs } from "../components";
 
 const ProductCatalog = () => {
   const [page, setPage] = useState(1);
@@ -17,8 +18,8 @@ const ProductCatalog = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       <main className="container mx-auto py-8">
+        <BreadCrumbs />
         <div className="flex">
-          {/* Sidebar */}
           <div className="hidden w-[300px] md:block border p-[15px] rounded-[10px] h-max mr-[100px]">
             <p className="text-[16px] font-medium pb-[15px] mb-[20px] border-b">
               Категории
@@ -169,7 +170,6 @@ const ProductCatalog = () => {
           ))}
         </div>
       </main>
-      
     </div>
   );
 };

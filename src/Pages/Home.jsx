@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import {
-  AboutCompany,
   Brends,
   Cabinet,
   Category,
@@ -25,7 +24,6 @@ const Home = () => {
       <Options />
       <Partners />
       <Brends />
-      <AboutCompany />
       <News />
       <SendQuestion />
       <Subscribe />

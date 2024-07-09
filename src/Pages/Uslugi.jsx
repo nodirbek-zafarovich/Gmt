@@ -9,10 +9,9 @@ import Services7 from "../assets/services7.png";
 import Services8 from "../assets/services8.png";
 import {
   AboutCompany,
+  BreadCrumbs,
   Footer,
-  News,
   Options,
-  SendQuestion,
 } from "../components";
 
 const Uslugi = () => {
@@ -22,6 +21,9 @@ const Uslugi = () => {
 
   return (
     <div>
+      <div className="mx-[45px]">
+        <BreadCrumbs />
+      </div>
       <div class=" container custom-margin mt-[40px] md:mt-[50px] lg:mt-[100px] mx-[60px] mb-[50px] ">
         <p class="mb-[30px] lg:mb-[40px]  text-[28px] md:text-[34px] lg:text-[48px] ">
           Услуги
@@ -245,7 +247,7 @@ const Uslugi = () => {
                     уточнения распределения внутренних резервов и ресурсов.{" "}
                   </p>
                 </div>
-                <div class="mt-auto  ">
+                <div class="mt-auto">
                   <button class="text-[12px] px-[10px]  py-2 lg:py-[11px] md:px-[20px] lg:px-[30px] border border-[--border] hover:bg-[--pri] hover:text-green-900 text-[--pri] rounded-full font-semibold  hover:border-[#07745E] duration-200  ">
                     Заказать
                   </button>
@@ -261,21 +263,12 @@ const Uslugi = () => {
             </div>
           </div>
         </div>
-        <div className="py-10">
-          <Options />
-        </div>
-        <div className="py-10">
-          <News />
-        </div>
 
         <div>
           <AboutCompany />
         </div>
-        <SendQuestion />
 
-        <footer>
-          <Footer />
-        </footer>
+       
       </div>
     </div>
   );

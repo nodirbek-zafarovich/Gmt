@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import {
   AboutCompany,
+  BreadCrumbs,
   Footer,
   Header,
   News,
@@ -56,6 +57,7 @@ const Manufactures = () => {
       <Header />
       <div className="min-h-screen bg-gray-100">
         <main className="container mx-auto py-6">
+          <BreadCrumbs/>
           <div className="flex">
             <aside className="w-1/4 pr-4">
               <h2 className="text-lg font-bold mb-4">Filters</h2>

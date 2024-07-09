@@ -6,9 +6,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // images
 import LogoFooter from "../assets/LogoFooter.svg";
-import WikiSvg from "../assets/WikiSvg.svg";
-import TgSvg from "../assets/TgSvg.svg";
-import WhatSappSvg from "../assets/WhatSappSvg.svg";
+import WikiSvg from "../assets/vk.svg";
+import TgSvg from "../assets/telegram.svg";
+import WhatSappSvg from "../assets/whatsapp.svg";
 import masterCard from "../assets/masterCard.svg";
 import visaCard from "../assets/visaCard.svg";
 import mirCard from "../assets/mirCard.svg";

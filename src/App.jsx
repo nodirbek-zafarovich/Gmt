@@ -18,6 +18,7 @@ import CabinetKey from "./Pages/CabinetKey";
 import Uslugi from "./Pages/Uslugi";
 import Aksii from "./Pages/Aksii";
 import Contact from "./Pages/Contact";
+import { AboutCompany } from "./components";
 
 const App = () => {
   // router
@@ -73,6 +74,10 @@ const App = () => {
         {
           path: "contact",
           element: <Contact />,
+        },
+        {
+          path: "about",
+          element: <AboutCompany />,
         },
       ],
     },

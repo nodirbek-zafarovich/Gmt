@@ -4,13 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/Logo.svg";
 
 // Links
-import { Links } from "../constants/Links";
+import { Links, sections } from "../constants/Links";
 
 // icons
 import { FaRegUser } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
 import { BsCart2 } from "react-icons/bs";
-import { BsFillBarChartFill } from "react-icons/bs";
+import { IoStatsChartOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 
@@ -44,11 +44,21 @@ const Header = () => {
         <div className="header__top hidden py-[5px] text-[#7A7687] md:block">
           <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-5">
             <div className="flex items-center gap-3 text-[10px] xl:text-[12px]">
-              <p>О компании</p>
-              <p>Доставка</p>
-              <p>Оплата</p>
-              <p>Гарантии</p>
-              <p>Блог</p>
+              <nav className="header__navbar hidden py-5 md:block">
+                <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between">
+                  <div className="text-[4px] gap-3 flex text-[--text] hover:text-[--pri] duration-200 font-medium leading-[normal]">
+                    {sections.map((link) => (
+                      <Link
+                        to={link?.to}
+                        key={link.id}
+                        className="text-[10px] text-gray-500 font-semibold  duration-150 hover:text-[#07745E] xl:text-[12px]"
+                      >
+                        {link.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </nav>
             </div>
             <div className="flex items-center gap-6 text-[10px] xl:text-[12px]">
               <Link to="mailto : info@mail.ru">info@mail.ru</Link>
@@ -91,7 +101,7 @@ const Header = () => {
                 to={"compare"}
                 className="flex flex-col items-center text-[#7A7687] hover:text-[#07745e]"
               >
-                <BsFillBarChartFill size={23} />
+                <IoStatsChartOutline size={23} />
                 <span className="mt-1 hidden lg:block">Сравнить</span>
               </NavLink>
               <NavLink

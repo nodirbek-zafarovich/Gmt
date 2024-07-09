@@ -1,9 +1,16 @@
 import React from "react";
+import { BreadCrumbs } from "../components";
+import Telegram from "../assets/telegramc.svg"
+import Vk from "../assets/vkc.svg"
+import Whatsapp from "../assets/whatsappc.svg"
 
 const Contact = () => {
   return (
     <div>
-      <div class=" container custom-margin mt-[40px] md:mt-[50px] lg:mt-[100px] mx-[30px] mb-[100px] ">
+      <div className="mx-[30px]">
+        <BreadCrumbs />
+      </div>
+      <div class=" container custom-margin mb-[100px] md:mt-[50px] lg:mt-[100px] mx-[30px]  ">
         <p class=" custom-title">Контакты</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-[10px] mt-[20px] md:mt-[30px] lg:mt-[40px] ">
           <div class="border border-[--border] rounded-[10px] p-[20px] md:p-[30px] lg:p-[40px] bg-white">
@@ -147,9 +154,9 @@ const Contact = () => {
                 <span class=" custom-text ">1167746796986</span>
               </span>
               <div class="flex ml-auto gap-[10px] ">
-                <img src="/public/vkc.svg" alt="" class=" text-white " />
-                <img src="/public/telegramc.svg" alt="" class=" text-white " />
-                <img src="/public/whatsappc.svg" alt="" class=" text-white " />
+                <img src={Vk} alt="" class=" " />
+                <img src={Telegram} alt="" class=" text-white " />
+                <img src={Whatsapp} alt="" class=" text-white " />
               </div>
             </div>
           </div>
@@ -199,7 +206,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <div class="flex flex-col lg:flex-row mt-[30px] lg:gap-[30px] items-start lg:items-center ">
-                <button class="text-[12px] bg-[--pri] text-white py-2 lg:py-[11px] px-[20px] lg:px-[30px] rounded-full font-semibold lg:text-[14px] hover:bg-[#07745E] duration-200  ">
+                <button class="text-[12px] bg-[#088269] text-white py-2 lg:py-[11px] px-[20px] lg:px-[30px] rounded-full font-semibold lg:text-[14px] hover:bg-[#07745E] duration-200  ">
                   Отправить
                 </button>
                 <p class="mt-4 text-[12px] font-medium text-[--text] opacity-60">
@@ -225,7 +232,7 @@ const Contact = () => {
             </button>{" "}
           </span>
           <span class=" absolute bottom-[20px] right-[20px] ">
-            <button class="text-[12px] bg-[--pri] text-white py-2 lg:py-[11px] px-[20px] lg:px-[30px] rounded-full font-semibold lg:text-[14px] hover:bg-[#07745E] duration-200  ">
+            <button class="text-[12px] bg-[--pri] text-white bg-green-900 py-2 lg:py-[11px] px-[20px] lg:px-[30px] rounded-full font-semibold lg:text-[14px] hover:bg-[#07745E] duration-200  ">
               Построить маршрут
             </button>{" "}
           </span>

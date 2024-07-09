@@ -17,7 +17,6 @@ import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Catalog = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -38,9 +37,9 @@ const Catalog = () => {
 
   return (
     <>
-      <section className="max-w-[1300px] mx-auto px-5">
+      <section className="max-w-[1300px] mx-auto px-5 ">
         <BreadCrumbs />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-5 sm:mb-7 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-5 sm:mb-7 md:mb-16 ">
           {currentPageData.map((product) => (
             <Link
               key={product.document_id}
@@ -50,10 +49,9 @@ const Catalog = () => {
               <LazyLoadImage
                 src={product.img}
                 alt={product.commercial_name}
-                className="w-full h-full rounded-t-[10px]"
+                className="w-full h-full rounded-t-[10px] object-fill"
                 height={300}
                 effect="blur"
-                width={404}
               />
               <div className="p-4">
                 <h5
