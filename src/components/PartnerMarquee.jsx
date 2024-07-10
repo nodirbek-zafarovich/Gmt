@@ -8,8 +8,7 @@ const ParnetMarquee = () => (
       {partnerCard.map((card) => (
         <div
           key={card.id}
-          className="flex
-flex-col items-center rounded-[10px] border-[1px] border-[#E1DFE7]"
+          className="flex flex-col items-center rounded-[10px] border-[1px] border-[#E1DFE7]"
         >
           <div className="h-[160px] w-full rounded-t-[10px] bg-white pt-[20px]">
             <LazyLoadImage

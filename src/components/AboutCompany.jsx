@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import BreadCrumbs from "./BreadCrumbs";
 import NewsCompany from "../assets/CompanyNews.png";
 import Partners from "./Partners";
 import Options from "./Options";
@@ -12,11 +11,10 @@ const AboutCompany = () => {
   }, []);
   return (
     <div>
-      <div className="mx-[40px]"></div>
-      <div className="container flex pt-[20px] gap-2 custom-text mx-[40px] ">
+      <div className="container  mx-auto flex pt-[20px] gap-2 custom-text  ">
         <div class=" container mb-[60px] md:mb-[120px] lg:mb-[150px] mt-[15px] md:mt-[25px] lg:mt-[40px] ">
-          <div class="mb-[25px] lg:mb-10">
-            <img src={NewsCompany} alt="" />
+          <div class="mb-[25px]  lg:mb-10 container px-[200px]">
+            <img src={NewsCompany} alt="" className="w-[1150px]" />
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 ">
             <p class="text-[28px] md:text-[34px] lg:text-[48px] font-medium leading-[110%] text-[--second] mb-[15px] md:mb-[20px] ">

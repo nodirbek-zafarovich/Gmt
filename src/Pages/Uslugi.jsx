@@ -7,12 +7,7 @@ import Services5 from "../assets/services5.png";
 import Services6 from "../assets/services6.png";
 import Services7 from "../assets/services7.png";
 import Services8 from "../assets/services8.png";
-import {
-  AboutCompany,
-  BreadCrumbs,
-  Footer,
-  Options,
-} from "../components";
+import { AboutCompany, BreadCrumbs, Subscribe } from "../components";
 
 const Uslugi = () => {
   useEffect(() => {
@@ -21,10 +16,10 @@ const Uslugi = () => {
 
   return (
     <div>
-      <div className="mx-[45px]">
+      <div className="container mx-auto">
         <BreadCrumbs />
       </div>
-      <div class=" container custom-margin mt-[40px] md:mt-[50px] lg:mt-[100px] mx-[60px] mb-[50px] ">
+      <div class=" container mx-auto custom-margin mt-[40px] md:mt-[50px] lg:mt-[100px] mb-[50px] ">
         <p class="mb-[30px] lg:mb-[40px]  text-[28px] md:text-[34px] lg:text-[48px] ">
           Услуги
         </p>
@@ -267,9 +262,8 @@ const Uslugi = () => {
         <div>
           <AboutCompany />
         </div>
-
-       
       </div>
+        <Subscribe />
     </div>
   );
 };

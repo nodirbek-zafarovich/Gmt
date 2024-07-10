@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 import {
-  AboutCompany,
   BreadCrumbs,
   Brends,
   Cabinet,
@@ -37,9 +36,9 @@ const Catalog = () => {
 
   return (
     <>
-      <section className="max-w-[1300px] mx-auto px-5 ">
+      <section className="max-w-[1300px] mx-auto px-5">
         <BreadCrumbs />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-5 sm:mb-7 md:mb-16 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-5 sm:mb-7 md:mb-16">
           {currentPageData.map((product) => (
             <Link
               key={product.document_id}
@@ -49,7 +48,7 @@ const Catalog = () => {
               <LazyLoadImage
                 src={product.img}
                 alt={product.commercial_name}
-                className="w-full h-full rounded-t-[10px] object-fill"
+                className="w-[403px] h-full rounded-t-[10px]"
                 height={300}
                 effect="blur"
               />
@@ -90,7 +89,6 @@ const Catalog = () => {
       </div>
       <Brends />
       <News />
-      <AboutCompany />
       <SendQuestion />
       <Subscribe />
     </>

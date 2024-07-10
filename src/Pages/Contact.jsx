@@ -1,16 +1,16 @@
 import React from "react";
-import { BreadCrumbs } from "../components";
-import Telegram from "../assets/telegramc.svg"
-import Vk from "../assets/vkc.svg"
-import Whatsapp from "../assets/whatsappc.svg"
+import { BreadCrumbs, Subscribe } from "../components";
+import Telegram from "../assets/telegramc.svg";
+import Vk from "../assets/vkc.svg";
+import Whatsapp from "../assets/whatsappc.svg";
 
 const Contact = () => {
   return (
     <div>
-      <div className="mx-[30px]">
+      <div className="container mx-auto">
         <BreadCrumbs />
       </div>
-      <div class=" container custom-margin mb-[100px] md:mt-[50px] lg:mt-[100px] mx-[30px]  ">
+      <div class=" container mx-auto custom-margin mb-[100px] md:mt-[50px] lg:mt-[100px]   ">
         <p class=" custom-title">Контакты</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-[10px] mt-[20px] md:mt-[30px] lg:mt-[40px] ">
           <div class="border border-[--border] rounded-[10px] p-[20px] md:p-[30px] lg:p-[40px] bg-white">
@@ -238,6 +238,7 @@ const Contact = () => {
           </span>
         </div>
       </div>
+      <Subscribe />
     </div>
   );
 };

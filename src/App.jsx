@@ -18,10 +18,13 @@ import CabinetKey from "./Pages/CabinetKey";
 import Uslugi from "./Pages/Uslugi";
 import Aksii from "./Pages/Aksii";
 import Contact from "./Pages/Contact";
-import { AboutCompany } from "./components";
+import Delivery from "./Pages/Delivery";
+import Payment from "./Pages/Payment";
+import Guarantees from "./Pages/Guarantees";
+import Blog from "./Pages/Blog";
+import AboutCompanyNews from "./components/AboutCompanyNews";
 
 const App = () => {
-  // router
   const router = createBrowserRouter([
     {
       path: "/",
@@ -77,7 +80,24 @@ const App = () => {
         },
         {
           path: "about",
-          element: <AboutCompany />,
+          element: <AboutCompanyNews />,
+        },
+
+        {
+          path: "delivery",
+          element: <Delivery />,
+        },
+        {
+          path: "payment",
+          element: <Payment />,
+        },
+        {
+          path: "guarantees",
+          element: <Guarantees />,
+        },
+        {
+          path: "blog",
+          element: <Blog />,
         },
       ],
     },

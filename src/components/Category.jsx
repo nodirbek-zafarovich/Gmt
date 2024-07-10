@@ -20,13 +20,13 @@ const Category = () => {
         {products.map((product) => (
           <Link
             key={product.document_id}
-            to={`/catalog/${product.document_name}`}
-            className="rounded-[10px] border-[1px]  border-[#E5E2EE]"
+            to={`/catalog/${product.document_id}`}
+            className="rounded-[10px] border-[1px] border-[#E5E2EE]"
           >
             <LazyLoadImage
               src={product.img}
               alt={product.commercial_name}
-              className=" w-full h-full rounded-t-[10px]"
+              className="w-[403px] h-full rounded-t-[10px]"
               height={300}
               effect="blur"
             />

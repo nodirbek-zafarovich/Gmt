@@ -47,10 +47,10 @@ const ProductDetail = () => {
       <section className="mx-auto mt-10 max-w-[1300px] px-5">
         <BreadCrumbs />
         <div className="flex flex-col gap-[15px] sm:gap-5 md:gap-[60px] md:flex-row md:justify-between">
-          <div className="w-full h-">
+          <div className="w-full h-full">
             <LazyLoadImage
-              src={product.img}
-              alt={product.commercial_name}
+            src={product.img}
+              alt={product.img}
               className="w-full h-full"
               height={400}
               effect="blur"

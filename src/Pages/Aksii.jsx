@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Products from "../data/products.json";
-import { BreadCrumbs } from "../components";
+import {
+  AboutCompany,
+  BreadCrumbs,
+  SendQuestion,
+  Subscribe,
+} from "../components";
 
 const ProductCatalog = () => {
   const [page, setPage] = useState(1);
@@ -169,7 +174,9 @@ const ProductCatalog = () => {
             </button>
           ))}
         </div>
+        <AboutCompany />
       </main>
+        <Subscribe />
     </div>
   );
 };

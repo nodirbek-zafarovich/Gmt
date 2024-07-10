@@ -10,6 +10,7 @@ import {
   SendQuestion,
   Subscribe,
 } from "../components";
+import AboutCompanyAcc from "../components/AboutCompanyAcc";
 
 const Home = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const Home = () => {
       <Partners />
       <Brends />
       <News />
+      <AboutCompanyAcc />
       <SendQuestion />
       <Subscribe />
     </div>
